@@ -1,4 +1,65 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 body {
-  background-color: #dadada;
-  font-size: 10px;
+background-color: #dadada; font-size: 10px;
+display: block;
+margin: 8px;
+}
+
+.container {
+  margin: 20px auto;
+  width: 420px;
+}
+
+
+}
+.emphasis {
+box-sizing: border-box;
+position: center;
+background-color: #dadada;
+margin: 0px;
+padding: 10px 0 15px 15px;
+position: fixed;
+width: 421px;
+}
+
+
+h1 {
+  font-size: 2em;
+  line-height: 1.2em;
+  font-weight: 400;
+}
+
+
+.baku1 {
+  width: 250px;
+  height: 250px;
+}
+
+@media screen and (min-width: 575px){
+   div {
+    margin: 1%;
+    width: 48%;
+  }
+  h1 {
+  font-size: 2.5em;
+  line-height: 1.4em
+}
+.baku1 {
+  width: 350px;
+  height: 350px;
+}
+}
+
+@media screen and (min-width: 991px){
+h1 {
+  font-size: 3em;
+  line-height: 1.6em;
+}
+.baku1 {
+  width: 500px;
+  height: 500px;
+}
 }
