@@ -1,36 +1,84 @@
 *, *:before, *:after { box-sizing: border-box; }
 
 body {
+font-family: sans-serif;
+font-size: 75%;
 background-color: #dadada; font-size: 10px;
 display: block;
 margin: 8px;
+background-color: #ffffff;
 }
 
 .container {
   margin: 20px auto;
-  width: 420px;
+  width: 400px;
+  background-color: #aaa;
 }
 
-.baku-pic {
+.preview {
+  width: 400px;
+  height: 300px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.baku {
   background-image: url(../images/baku.jpg);
+  margin-top: 20px;
 }
 
- background-image: url("images/london.png");
-background-image: url("images/rome.jpg");
-background-image: url("images/madrid.jpg");
-.emphasis {
-box-sizing: border-box;
-position: center;
-background-color: #dadada;
-margin: 0px;
-padding: 10px 0 15px 15px;
-position: fixed;
-width: 421px;
+.london {
+  background-image: url(../images/london.png);
 }
+.rome {
+  background-image: url(../images/rome.jpg);
+}
+
+.madrid {
+background-image: url(../images/madrid.jpg);
+}
+
+.emphasis {
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  padding: 10px 0 15px 110px;
+  position: fixed;
+  width: 400px;
+  background-color: #aaa;
+}
+
 
 
 h1 {
   font-size: 2em;
   line-height: 1.2em;
   font-weight: 400;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: 400;
+}
+
+@@media screen and (min-width: 575px) {
+  h1 {
+    font-size: 3em;
+  }
+  h2 {
+    font-size: 2.5em;
+  }
+
+  .preview {
+    width: 575px;
+    height: 475px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  @media screen and (max-width: 991px) {
+
+.preview {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
 }
