@@ -1,18 +1,14 @@
 *, *:before, *:after { box-sizing: border-box; }
 
 body {
-font-family: sans-serif;
-font-size: 75%;
-background-color: #dadada; font-size: 10px;
-display: block;
-margin: 8px;
-background-color: #ffffff;
+font-family: serif;
+font-size: 12px;
+background-color: #dadada;
 }
 
 .container {
   margin: 20px auto;
-  width: 400px;
-  background-color: #aaa;
+  width: 420px;
 }
 
 .preview {
@@ -24,27 +20,28 @@ background-color: #ffffff;
 
 .baku {
   background-image: url(../images/baku.jpg);
-  margin-top: 20px;
+ padding: 20px;
 }
 
 .london {
   background-image: url(../images/london.png);
+  padding: 20px;
 }
 .rome {
   background-image: url(../images/rome.jpg);
+  padding: 20px;
 }
 
 .madrid {
 background-image: url(../images/madrid.jpg);
+padding: 20px;
 }
 
 .emphasis {
   box-sizing: border-box;
   margin-bottom: 10px;
   padding: 10px 0 15px 110px;
-  position: fixed;
-  width: 400px;
-  background-color: #aaa;
+  position: middle;
 }
 
 
@@ -60,7 +57,13 @@ h2 {
   font-weight: 400;
 }
 
-@@media screen and (min-width: 575px) {
+@media (min-width: 575px) {
+
+.container {
+  margin: 0px auto;
+  width: 80%;
+  }
+
   h1 {
     font-size: 3em;
   }
@@ -68,17 +71,39 @@ h2 {
     font-size: 2.5em;
   }
 
-  .preview {
-    width: 575px;
-    height: 475px;
-    background-size: 100%;
-    background-repeat: no-repeat;
-  }
-  @media screen and (max-width: 991px) {
-
 .preview {
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
+ width: 48%;
+ margin: 1%;
+ height: 200px;
+ background-size: cover;
+ float: right;
+  }
 }
-}
+  @media (min-width: 991px) {
+
+    .emphasis {
+      margin: 0px auto;
+    }
+
+    .container {
+      margin: 0px auto;
+      width: 70%;
+    }
+
+    h1 {
+      margin: 0px auto;
+      font-size: 3em;
+      position: center;
+    }
+    h2 {
+      font-size: 2.5em;
+    }
+
+    .preview {
+      float:left;
+      width: 23%;
+      margin: 2em 1%;
+      height: 200px;
+      background-size: cover;
+    }
+  }
