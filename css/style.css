@@ -7,7 +7,7 @@ background-color: #ffffff;
 }
 
 .container {
-  margin: 20px auto;
+  margin: 0px auto;
   width: 420px;
   background-color: #dadada;
 }
@@ -62,9 +62,11 @@ h2 {
 
 @media (min-width: 575px) {
 
-.emphasis {
-  text-align: center;
-}
+  .emphasis {
+text-align: center;
+  }
+
+
 .container {
   margin: 0px auto;
   width: 80%;
@@ -74,12 +76,13 @@ h2 {
     font-size: 2em;
   }
   h2 {
-    text-align: left;
     font-size: 2em;
   }
 
+
+
 .preview {
- width: 47%;
+ width: 48%;
  margin: 1%;
  height: 200px;
  background-size: cover;
